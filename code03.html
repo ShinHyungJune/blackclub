@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="robots" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
+	<link href="" rel="icon" type="image/jpg">
+	<link href="" rel="shortcut icon" type="image/jpg">
+	<link href="" rel="apple-touch-icon" type="image/jpg">	
+	<link rel="stylesheet" type="text/css" href="./asset/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="./asset/css/base.css">
+	<link rel="stylesheet" type="text/css" href="./asset/css/common.css?a=1">		 
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="./asset/js/swiper.min.js?a=2"></script>	
+	<script src="./asset/js/swiper.js"></script>	
+	<script src="./asset/js/common.js"></script>
+</head>
+<body> 
+	<div class="wrapper">
+		<div class="space-box">
+			<div class="space-box-inner">
+				<div class="top-head-box">
+					<a href="" class="back">이전으로</a>
+					<h1>계정을 생성해주세요</h1>
+				</div>
+			</div>
+			<div class="space-box-inner white-full">
+				<div class="inner-space-box">
+					<div class="inner-space">
+						<div class="form-box">
+							<form>
+								<div class="form-group mb25">
+									<div class="form-title">
+										<strong>이메일 ID</strong>
+									</div>
+									<div class="form-content">
+										<div class="input-box bottom">
+											<input type="text" placeholder="아이디로 사용할 이메일">
+										</div>
+										<div class="input-text-box">
+											<p>잘못된 이메일입니다.</p>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="form-title">
+										<strong>비밀번호</strong>
+									</div>
+									<div class="form-content">
+										<div class="input-box bottom">
+											<input type="password" placeholder="8~16자리 이내 영문자, 숫자">
+											<a href="javascript:;" class="pw-toggle">표시</a>
+										</div>
+										<div class="input-text-box">
+											<p>8~16자리 이내 영문자,숫자를 입력해 주세요.</p>
+										</div>
+										<div class="input-box bottom mt10">
+											<input type="password" placeholder="비밀번호 다시 입력">
+											<a href="javascript:;" class="pw-toggle">표시</a>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="inner-space">
+						<div class="button-box">
+							<a href="javascript:;" onclick="popupOpen('agree');" class="btn btn-black disabled">등록 하기</a>
+						</div>
+						<div class="flex flex-vc flex-tc mt20">
+							<a href="javascript:;" class="f12 mr10" onclick="popupOpen('success');">회원가입 성공</a>
+							<a href="javascript:;" class="f12 mr10" onclick="popupOpen('error');">가입제한</a>	   
+							<a href="javascript:;" class="f12" onclick="popupOpen('insert');">기본정보등록</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup-box">
+			<div class="box" data-name="agree">
+				<div class="title-box">
+					<h2>약관에 동의해주세요.</h2>
+				</div>
+				<div class="all-check-box mt30">
+					<div class="check-box">		
+						<div class="check-box-inner">	
+							<input type="checkbox" name="allcheck" id="allcheck">
+							<label for="allcheck"><p>약관에 모두 동의합니다.</p></label>
+						</div>
+					</div>
+				</div>
+				<div class="check-box agree-list mt24">
+					<div class="check-box-inner pl15">
+						<input type="checkbox" name="check01" id="check01">
+						<label for="check01">
+							<em>[필수]</em>
+							<p>서비스 이용약관 동의</p>
+						</label>
+					</div>
+					<a href="">보기</a>
+				</div>
+				<div class="check-box agree-list mt18">	
+					<div class="check-box-inner pl15">
+						<input type="checkbox" name="check01" id="check02">
+						<label for="check02">
+							<em>[필수]</em>
+							<p>개인정보 수집 및 이용 동의</p>
+						</label>
+					</div>
+					<a href="">보기</a>
+				</div>
+				<div class="check-box agree-list mt18">	
+					<div class="check-box-inner pl15">
+						<input type="checkbox" name="check01" id="check03">
+						<label for="check03">
+							<em>[선택]</em>
+							<p>홍보 및 마케팅 목적의 개인정보<br>수집 및 이용 동의</p>
+						</label>
+					</div>
+					<a href="">보기</a>
+				</div>
+				<div class="check-box agree-list mt18">	 
+					<div class="check-box-inner pl15">
+						<input type="checkbox" name="check01" id="check04">
+						<label for="check04">
+							<em>[선택]</em>
+							<p>광고성 정보 수신 동의</p>
+						</label>
+					</div>
+					<a href="">보기</a>
+				</div>
+				<div class="button-box mt30">
+					<a href="" class="btn btn-black">본인인증하기</a>
+				</div>
+				<div class="link-box">
+					<div class="link-box-btn mt0">
+						<a href="javascript:;" onclick="popupClose();" class="pt20 ft-lightgray sm">닫기</a>
+					</div>
+				</div>
+			</div>
+			<div class="box popup-box-alert" data-name="success">
+				<p>회원가입에 성공하였습니다.</p>
+			</div>
+			<div class="box popup-box-alert" data-name="error">
+				<p>가입제한 연령에 걸리셨습니다.</p>
+			</div>
+			<div class="box popup-box-center" data-name="insert">
+				<img src="./asset/images/logo_b.png" class="logo">
+				<div class="text-box mt45">
+					<p class="ft-black">
+						안녕하세요. 회원님<br>
+						더블랙클럽에 오신것을 환영합니다.<br><br>
+
+						지금부터 기본정보 등록 시작하겠습니다.<br>
+						약 2분 정도 소요되며<br> 
+						팝업이 여러개 나오더라도 금방 끝나니까<br>
+						잘 진행해주세요.<br><br>
+
+						더블랙클럽 매니저팀에서<br> 
+						유일한 1% 당신의 상대를 매칭할수 있게<br><br>
+
+						진정성있게 등록 부탁드려요.
+					</p>
+				</div>
+				<div class="button-box mt45">
+					<a href="" class="btn btn-black">기본정보 등록시작</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
